@@ -82,7 +82,7 @@ section {
 }
 
 section h1 {
-	text-align: center;
+	/* text-align: center; */
 	display: block;
 	margin-bottom: 5rem;
 }
@@ -177,3 +177,118 @@ nav .container ul li a:hover {
 }
 
 /* nav end */
+
+/* landing section start */
+section.landing {
+	display: grid;
+	place-items: center;
+	position: relative;
+	top: 5rem;
+	padding-bottom: 10rem;
+}
+section.landing > .container {
+	display: grid;
+	grid-template-columns: 5rem auto 28rem;
+}
+section.landing .socials {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	margin-top: 5rem;
+}
+
+section.landing .socials a {
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+	line-height: 2rem;
+	color: var(--color-dark);
+	background-color: var(--color-light);
+	border-radius: 50%;
+	font-size: 1.1rem;
+	transition: var(--transition);
+}
+
+section.landing .socials a:hover {
+	background-color: var(--color-primary);
+	color: var(--color-white);
+}
+
+section.landing .info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
+	padding: 0 14rem;
+	text-align: end;
+}
+
+section.landing .profile-area {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+section.landing .profile-area .outer-circle {
+	width: 26rem;
+	height: 26rem;
+	border: 1px solid var(--color-primary);
+	border-radius: 50%;
+	position: relative;
+	background: transparent;
+	animation: myAnimation 100s linear infinite;
+}
+
+@keyframes myAnimation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+section.landing .profile-area .outer-circle i {
+	position: absolute;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 4rem;
+	color: var(--color-primary);
+	background-color: var(--color-light);
+	box-shadow: 0 0 1rem var(--color-primary);
+}
+section.landing .profile-area .outer-circle i:nth-child(4) {
+	bottom: -2rem;
+	right: calc(50% - 2rem);
+}
+section.landing .profile-area .outer-circle i:nth-child(3) {
+	right: -2rem;
+	top: calc(50% - 2rem);
+}
+section.landing .profile-area .outer-circle i:nth-child(2) {
+	top: -2rem;
+	right: calc(50% - 2rem);
+}
+section.landing .profile-area .outer-circle i:nth-child(1) {
+	left: -2rem;
+	bottom: calc(50% - 2rem);
+}
+
+section.landing .profile-area .inner-circle {
+	width: 20rem;
+	height: 20rem;
+	position: absolute;
+	border: 1px solid var(--color-light);
+	border-radius: 50%;
+	overflow: hidden;
+	background: transparent;
+}
+
+/* section.landing::after {
+	content: '';
+	width: 50rem;
+	height: 1px;
+	background-color: #f24f1e42;
+	position: absolute;
+	bottom: 1rem;
+} */
+/* landing section end */
