@@ -303,8 +303,6 @@ section.about {
 	background-color: var(--color-light);
 }
 
-section.about .image {
-}
 section.about .container {
 	display: grid;
 	grid-template-columns: 26rem auto;
@@ -325,4 +323,15 @@ section.about .container {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+}
+
+section.about .container .read-more {
+	display: block;
+	margin: 1rem 0 2rem;
+	color: var(--color-primary);
+	cursor: pointer;
+}
+
+section.about .container .read-more:hover {
+	text-decoration: underline;
 }
