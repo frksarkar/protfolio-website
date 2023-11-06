@@ -296,3 +296,33 @@ section.landing .profile-area .inner-circle {
 	bottom: 1rem;
 } */
 /* landing section end */
+
+/* about section start */
+
+section.about {
+	background-color: var(--color-light);
+}
+
+section.about .image {
+}
+section.about .container {
+	display: grid;
+	grid-template-columns: 26rem auto;
+	gap: 5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-title {
+	position: relative;
+}
+
+.about-title::after {
+	content: '';
+	background-color: var(--color-primary);
+	width: 5rem;
+	height: 0.5rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
