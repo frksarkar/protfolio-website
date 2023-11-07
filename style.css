@@ -81,10 +81,14 @@ section {
 	overflow-x: hidden;
 }
 
-section h1 {
-	/* text-align: center; */
+section > h1,
+h1 {
 	display: block;
 	margin-bottom: 5rem;
+}
+
+section > h1 {
+	text-align: center;
 }
 
 img {
@@ -324,7 +328,6 @@ section.about .container {
 	bottom: 0;
 	left: 0;
 }
-
 section.about .container .read-more {
 	display: block;
 	margin: 1rem 0 2rem;
@@ -335,6 +338,10 @@ section.about .container .read-more {
 section.about .container .read-more:hover {
 	text-decoration: underline;
 }
+
+/* about section end */
+
+/* skills section start */
 
 #skills .container {
 	width: 50%;
@@ -405,3 +412,5 @@ section.about .container .read-more:hover {
 	height: 1rem;
 	background-color: var(--color-primary);
 }
+
+/* skills section end */
