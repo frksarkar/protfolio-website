@@ -335,3 +335,73 @@ section.about .container .read-more {
 section.about .container .read-more:hover {
 	text-decoration: underline;
 }
+
+#skills .container {
+	width: 50%;
+}
+#skills .skill {
+	margin-bottom: 1rem;
+}
+
+#skills .skill .head {
+	background-color: var(--color-primary);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: var(--color-white);
+	padding: 1rem;
+}
+
+#skills .skill .head .left h4 {
+	color: var(--color-white);
+}
+#skills .skill .head .left {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+#skills .skill .item {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 1rem;
+	padding: 1.6rem;
+	margin-bottom: 0.3rem;
+	background: var(--color-light);
+	transition: var(--transition);
+}
+
+#skills .skill .item:hover {
+	background-color: var(--color-white);
+}
+
+#skills .skill .item .progress-area {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+#skills .skill .item .progress-bar {
+	width: 100%;
+	height: 1rem;
+	background-color: var(--color-primary-light);
+}
+
+#skills .skill .item:first-child .progress {
+	width: 99%;
+	height: 1rem;
+	background-color: var(--color-primary);
+}
+#skills .skill .item:nth-child(2) .progress {
+	width: 80%;
+	height: 1rem;
+	background-color: var(--color-primary);
+}
+
+#skills .skill .item:last-child .progress {
+	width: 50%;
+	height: 1rem;
+	background-color: var(--color-primary);
+}
