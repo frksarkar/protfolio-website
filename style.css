@@ -191,8 +191,8 @@ section.landing {
 	display: grid;
 	place-items: center;
 	position: relative;
-	top: 5rem;
-	padding-bottom: 10rem;
+	/* top: 5rem; */
+	padding: 17rem 0;
 }
 section.landing > .container {
 	display: grid;
@@ -227,7 +227,7 @@ section.landing .info {
 	flex-direction: column;
 	justify-content: center;
 	align-items: end;
-	padding: 0 14rem;
+	padding: 0 5rem;
 	text-align: end;
 }
 
@@ -346,6 +346,7 @@ section.about .container .read-more:hover {
 #skills .container {
 	width: 50%;
 }
+
 #skills .skill {
 	margin-bottom: 1rem;
 }
@@ -413,4 +414,57 @@ section.about .container .read-more:hover {
 	background-color: var(--color-primary);
 }
 
+#skills .skill .items {
+	display: none;
+}
+
 /* skills section end */
+
+/* service section start */
+
+#services {
+	background-color: var(--color-light);
+}
+
+#services .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2rem;
+}
+
+#services .service {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	padding: 3rem 2rem;
+	text-align: center;
+	cursor: pointer;
+	background-color: var(--color-white);
+	transition: var(--transition);
+}
+
+#services .service:hover {
+	box-shadow: 0 1rem 1rem var(--color-primary-light);
+}
+
+#services .service i {
+	margin: 0 auto;
+	background-color: var(--color-primary);
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: var(--color-white);
+}
+
+#services .service:last-child i {
+	background-color: var(--color-success);
+}
+
+#services .service:nth-child(2) i {
+	background-color: var(--color-warning);
+}
+
+/* service section end */
