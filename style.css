@@ -70,6 +70,10 @@ p {
 	line-height: 1.8;
 }
 
+.spacer {
+	margin-top: 9rem;
+}
+
 .container {
 	width: 80%;
 	margin: 0 auto;
@@ -466,5 +470,4 @@ section.about .container .read-more:hover {
 #services .service:nth-child(2) i {
 	background-color: var(--color-warning);
 }
-
 /* service section end */
