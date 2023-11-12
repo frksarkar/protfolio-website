@@ -493,3 +493,60 @@ h2 {
 	color: var(--color-primary);
 }
 /* portfolio section end */
+/* testimonial section start */
+#testimonials {
+	background-color: var(--color-light);
+}
+
+#testimonials .container {
+	width: 50rem;
+}
+
+#testimonials .carousel {
+	/* display: flex; */
+	/* align-items: center; */
+	/* flex-direction: column; */
+	/* gap: 1rem; */
+}
+
+#testimonials .testimonial {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	background-color: var(--color-white);
+	gap: 1rem;
+	cursor: pointer;
+}
+
+#testimonials .testimonial .head {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#testimonials .testimonial .head .profile-area {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+#testimonials .testimonial .head .profile-area .avatar {
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 1px solid var(--color-primary);
+	overflow: hidden;
+}
+
+#testimonials .testimonial .head .stars > i {
+	color: var(--color-primary);
+}
+
+/* over write the swiper css */
+.swiper-scrollbar {
+	position: initial !important;
+	width: inherit !important;
+	margin-top: 0.6rem;
+}
+
+/* testimonial section end */

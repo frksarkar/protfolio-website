@@ -18,6 +18,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<!-- swiper css style -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
 		<link rel="stylesheet" href="style.css" />
 		<title>personal portfolio website</title>
 	</head>
@@ -479,6 +485,122 @@
 			</div>
 		</section>
 		<!-- protfolio section end -->
+		<!-- testimonials section start -->
+		<section class="testimonials" id="testimonials">
+			<h1>testimonials</h1>
+			<div class="container swiper">
+				<div class="carousel swiper-wrapper">
+					<!-- tastimonial start  -->
+					<div class="testimonial swiper-slide">
+						<div class="head">
+							<div class="profile-area">
+								<div class="avatar">
+									<img
+										src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YXZhdGFyfGVufDB8fDB8fHww"
+										alt=""
+									/>
+								</div>
+								<div class="info">
+									<h4>Diana Ayi</h4>
+									<small>Civil Engineer (soviel.com)</small>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Dolor illum autem eum beatae qui modi natus
+							obcaecati impedit explicabo sit?
+						</p>
+					</div>
+					<!-- testimonial end -->
+					<!-- tastimonial start  -->
+					<div class="testimonial swiper-slide">
+						<div class="head">
+							<div class="profile-area">
+								<div class="avatar">
+									<img
+										src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=461&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt=""
+									/>
+								</div>
+								<div class="info">
+									<h4>Diana Ayi</h4>
+									<small>Civil Engineer (soviel.com)</small>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Dolor illum autem eum beatae qui modi natus
+							obcaecati impedit explicabo sit?
+						</p>
+					</div>
+					<!-- testimonial end -->
+					<!-- tastimonial start  -->
+					<div class="testimonial swiper-slide">
+						<div class="head">
+							<div class="profile-area">
+								<div class="avatar">
+									<img
+										src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+										alt=""
+									/>
+								</div>
+								<div class="info">
+									<h4>Diana Ayi</h4>
+									<small>Civil Engineer (soviel.com)</small>
+								</div>
+							</div>
+							<div class="stars">
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+								<i class="fa-solid fa-star"></i>
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Dolor illum autem eum beatae qui modi natus
+							obcaecati impedit explicabo sit?
+						</p>
+					</div>
+					<!-- testimonial end -->
+				</div>
+				<!-- If we need scrollbar -->
+				<div class="swiper-scrollbar">
+					<div class="swiper-scrollbar-drag"></div>
+				</div>
+			</div>
+		</section>
+		<!-- testimonials section end -->
 		<script src="./script.js"></script>
+		<!-- swiper slide script -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script>
+			// swiper enable with default settings
+			const swiper = new Swiper('.swiper', {
+				speed: 400,
+				spaceBetween: 100,
+				scrollbar: {
+					el: '.swiper-scrollbar',
+					draggable: true,
+				},
+			});
+		</script>
 	</body>
 </html>
