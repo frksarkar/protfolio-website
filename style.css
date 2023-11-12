@@ -471,3 +471,25 @@ section.about .container .read-more:hover {
 	background-color: var(--color-warning);
 }
 /* service section end */
+/* portfolio section start */
+#portfolio h1,
+h2 {
+	margin-top: 2rem;
+}
+#portfolio .projects {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+}
+
+#portfolio .projects .action {
+	display: flex;
+	gap: 1rem;
+	margin-top: 1rem;
+}
+
+#portfolio .projects .action a:hover {
+	text-decoration: underline;
+	color: var(--color-primary);
+}
+/* portfolio section end */
