@@ -550,3 +550,15 @@ h2 {
 }
 
 /* testimonial section end */
+/* contacts section start */
+
+#contact .overlay {
+	width: 100%;
+	height: 100%;
+	background-color: #1414153b;
+}
+#contact .container {
+	width: 40%;
+}
+
+/* contacts section end */
