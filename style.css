@@ -353,6 +353,7 @@ section.about .container .read-more:hover {
 
 #skills .skill {
 	margin-bottom: 1rem;
+	overflow: hidden;
 }
 
 #skills .skill .head {
@@ -362,6 +363,7 @@ section.about .container .read-more:hover {
 	align-items: center;
 	color: var(--color-white);
 	padding: 1rem;
+	cursor: pointer;
 }
 
 #skills .skill .head .left h4 {
@@ -372,6 +374,42 @@ section.about .container .read-more:hover {
 	align-items: center;
 	gap: 1rem;
 }
+
+#skills .container {
+	overflow: hidden;
+}
+
+#skills .skill .items {
+	position: relative;
+	margin-top: -19.5rem;
+	z-index: -1;
+	transition: margin 2s;
+}
+
+.show {
+	margin-top: 0px !important;
+}
+
+/* #skills .container {
+}
+
+#skills .skill .items {
+	margin-top: -31%;
+	position: relative;
+	z-index: -1;
+	display: none;
+}
+
+.show {
+	display: block !important;
+	animation: show 1s ease forwards;
+}
+
+@keyframes show {
+	to {
+		margin-top: 0px;
+	}
+} */
 
 #skills .skill .item {
 	display: flex;
@@ -418,8 +456,8 @@ section.about .container .read-more:hover {
 	background-color: var(--color-primary);
 }
 
-#skills .skill .items {
-	display: none;
+.active {
+	display: block !important;
 }
 
 /* skills section end */
@@ -656,14 +694,24 @@ footer {
 		position: fixed;
 		background-color: #fadd7c;
 		top: 0;
-		left: 0;
+		left: -100%;
 		bottom: 0;
 		justify-content: start;
 		width: 40%;
 		box-shadow: 1rem 0 1rem 0 var(--color-primary-light);
 		overflow: hidden;
-		transition: all 30s ease-in-out;
 		display: none;
+	}
+
+	.active {
+		display: block !important;
+		animation: slideIn 0.3s ease forwards;
+	}
+
+	@keyframes slideIn {
+		to {
+			left: 0;
+		}
 	}
 
 	nav .container ul > li {
@@ -781,7 +829,7 @@ footer {
 	/* portfolio section end */
 	/* testimonials section start */
 	#testimonials .container {
-		width: 95vw;
+		width: 90vw;
 	}
 	/* testimonials section start */
 	/* contact section start */
