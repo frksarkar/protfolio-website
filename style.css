@@ -8,8 +8,11 @@
 	--color-primary-light: hsl(14, 89%, 52%, 12%);
 	--color-success: #29f5a6;
 	--color-warning: #ffce31;
-
 	--transition: all 300ms ease;
+
+	/* scroll style */
+	scrollbar-color: var(--color-primary) var(--color-primary-light);
+	scrollbar-width: thin;
 }
 
 /* global properties */
@@ -22,6 +25,20 @@
 	box-sizing: border-box;
 	list-style: none;
 	text-decoration: none;
+}
+
+.scroller {
+	scrollbar-width: thin;
+	scrollbar-color: #0a4c95 #c2d2e4;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background-color: var(--color-primary-light);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-primary);
 }
 
 html {
@@ -188,6 +205,11 @@ nav .container ul li a:hover {
 	color: var(--color-white);
 }
 
+.active-menu {
+	background-color: var(--color-primary);
+	color: var(--color-white) !important;
+}
+
 /* nav end */
 
 /* landing section start */
@@ -332,6 +354,15 @@ section.about .container {
 	bottom: 0;
 	left: 0;
 }
+
+#about .read-more-content {
+	display: none;
+}
+
+.show-content {
+	display: block !important;
+}
+
 section.about .container .read-more {
 	display: block;
 	margin: 1rem 0 2rem;
@@ -681,8 +712,8 @@ footer {
 		width: 95%;
 	}
 
-	nav {
-		box-shadow: 1rem 0 1rem 0 var(--color-primary-light);
+	.nav-box-shadow {
+		box-shadow: 2rem 0 2rem 0 var(--color-primary-light);
 	}
 
 	nav .container {
@@ -829,7 +860,7 @@ footer {
 	/* portfolio section end */
 	/* testimonials section start */
 	#testimonials .container {
-		width: 90vw;
+		width: 100vw;
 	}
 	/* testimonials section start */
 	/* contact section start */

@@ -1,11 +1,42 @@
-const menuBtn = document.querySelector('.menu-btn');
-const closeBtn = document.querySelector('.close-btn');
-const menuBar = document.querySelector('.menu-bar');
+// select the html element
+const nav = (() => {
+	const menuBtn = document.querySelector('.menu-btn');
+	const closeBtn = document.querySelector('.close-btn');
+	const menuBar = document.querySelector('.menu-bar');
+	const navContainer = document.querySelector('nav');
+	return { menuBar, menuBtn, closeBtn, navContainer };
+})();
+
+// active menu button click handler
+const menu = (() => {
+	const menu = nav.menuBar.querySelectorAll('a');
+	menu.forEach((element) => {
+		element.addEventListener('click', function () {
+			menu.forEach((element) => {
+				if (element.className) {
+					return element.classList.remove('active-menu');
+				}
+			});
+			this.classList.add('active-menu');
+		});
+	});
+	return menu;
+})();
+
+const about = (() => {
+	const readMoreBtn = document.querySelector('.read-more');
+	const readMoreContent = document.querySelector('.read-more-content');
+	return {
+		readMoreBtn,
+		readMoreContent,
+	};
+})();
 
 function toggleElement(e) {
 	e.querySelector('.items').classList.toggle('show');
 }
 
+// show and hide the skills item
 const skillsSection = (() => {
 	const skills = document.querySelectorAll('#skills .skill');
 	skills.forEach((element) => {
@@ -16,18 +47,37 @@ const skillsSection = (() => {
 	return { skills };
 })();
 
-menuBtn.addEventListener('click', () => {
+// show mobile menu bar when clicking on the menu bar button
+nav.menuBtn.addEventListener('click', () => {
 	// menuBar.style.display = 'block';
-	menuBar.classList.add('active');
+	nav.menuBar.classList.add('active');
 
-	menuBtn.style.display = 'none';
-	closeBtn.style.display = 'block';
+	nav.menuBtn.style.display = 'none';
+	nav.closeBtn.style.display = 'block';
 });
 
-closeBtn.addEventListener('click', () => {
+// hide mobile menu bar when clicking on the menu bar button
+nav.closeBtn.addEventListener('click', () => {
 	// menuBar.style.display = 'none';
-	menuBar.classList.remove('active');
+	nav.menuBar.classList.remove('active');
 
-	menuBtn.style.display = 'block';
-	closeBtn.style.display = 'none';
+	nav.menuBtn.style.display = 'block';
+	nav.closeBtn.style.display = 'none';
+});
+
+// show and hide the read-more content
+about.readMoreBtn.addEventListener('click', () => {
+	about.readMoreContent.classList.toggle('show-content');
+	const isShowContent = about.readMoreContent.className.split(' ')[1];
+	console.log(about.readMoreBtn.innerText);
+	if (isShowContent) {
+		return (about.readMoreBtn.innerText = 'Show less');
+	}
+	about.readMoreBtn.innerText = 'Show more';
+});
+
+// show box shadow down the navbar when scrolling down
+window.addEventListener('scroll', () => {
+	nav.navContainer.classList.toggle('nav-box-shadow', window.scrollY > 50);
+	console.log(window.scrollY);
 });
