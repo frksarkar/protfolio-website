@@ -183,8 +183,18 @@ nav .container ul li a {
 	font-weight: 500;
 	position: relative;
 	color: var(--color-dark);
-	/* background-color: var(--color-primary); */
+	/*background-color: var(--color-primary);
+	*/
 	transition: var(--transition);
+	-webkit-transition: var(--transition);
+	-moz-transition: var(--transition);
+	-ms-transition: var(--transition);
+	-o-transition: var(--transition);
+	/* hover a tag */
+	&:hover {
+		background-color: var(--color-primary);
+		color: var(--color-white);
+	}
 }
 
 nav .container ul li a::before {
