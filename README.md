@@ -1,13 +1,11 @@
-# protfolio-website
-live demo link: https://frksarkar.github.io/protfolio-website/
 <div class="markdown prose w-full break-words dark:prose-invert light">
-    <p>Got it! Here's an updated version of the GitHub README description tailored to the technologies used: HTML, CSS, and JavaScript.</p>
     <hr />
     <h1>My Portfolio Website</h1>
     <p>
         Welcome to my portfolio website! This project showcases my skills and expertise in web development and design. The site is structured into six main sections: <strong>Home</strong>, <strong>About</strong>, <strong>Skills</strong>,
         <strong>Services</strong>, <strong>Portfolio</strong>, and <strong>Let's Talk</strong>. Each section is crafted to provide a comprehensive view of my abilities and work experience.
     </p>
+    live demo link: https://frksarkar.github.io/protfolio-website/
     <h2>Sections</h2>
     <h3>1. Home</h3>
     <p>The <strong>Home</strong> section serves as the introduction to my portfolio. It provides a brief overview of who I am and what I do, setting the stage for visitors to explore the rest of the site.</p>
