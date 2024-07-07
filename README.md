@@ -1,11 +1,28 @@
 <div class="markdown prose w-full break-words dark:prose-invert light">
-    <hr />
     <h1>My Portfolio Website</h1>
     <p>
         Welcome to my portfolio website! This project showcases my skills and expertise in web development and design. The site is structured into six main sections: <strong>Home</strong>, <strong>About</strong>, <strong>Skills</strong>,
         <strong>Services</strong>, <strong>Portfolio</strong>, and <strong>Let's Talk</strong>. Each section is crafted to provide a comprehensive view of my abilities and work experience.
     </p>
-    live demo link: https://frksarkar.github.io/protfolio-website/
+    <strong>live demo link:</strong> https://frksarkar.github.io/protfolio-website/
+    <h2>Table of Contents</h2>
+    <ol>
+    <li>
+        <a href="#sections">Sections</a>
+        <ul>
+            <li><a href="#1-home">Home</a></li>
+            <li><a href="#2-about">About</a></li>
+            <li><a href="#3-skills">Skills</a></li>
+            <li><a href="#4-services">Services</a></li>
+            <li><a href="#5-portfolio">Portfolio</a></li>
+            <li><a href="#6-lets-talk">Let's Talk</a></li>
+        </ul>
+    </li>
+    <li><a href="#technologies-used">Technologies Used</a></li>
+    <li><a href="#how-to-run-the-project">How to Run the Project</a></li>
+    <li><a href="#contributions">Contributions</a></li>
+    <li><a href="#license">License</a></li>
+</ol>
     <h2>Sections</h2>
     <h3>1. Home</h3>
     <p>The <strong>Home</strong> section serves as the introduction to my portfolio. It provides a brief overview of who I am and what I do, setting the stage for visitors to explore the rest of the site.</p>
@@ -52,12 +69,12 @@
     <ol>
         <li>
             <strong>Clone the repository</strong>:
-            <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><div class="flex items-center"><span class="" data-state="closed"><button class="flex gap-1 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" fill-rule="evenodd" d="M7 5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h2zm2 2h5a3 3 0 0 1 3 3v5h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1zM5 9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z" clip-rule="evenodd"></path></svg>Copy code</button></span></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/yourusername/portfolio-website.git
+            <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/yourusername/portfolio-website.git
 </code></div></div></pre>
         </li>
         <li>
             <strong>Navigate to the project directory</strong>:
-            <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="flex items-center relative text-token-text-secondary bg-token-main-surface-secondary px-4 py-2 text-xs font-sans justify-between rounded-t-md"><span>bash</span><div class="flex items-center"><span class="" data-state="closed"><button class="flex gap-1 items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon-sm"><path fill="currentColor" fill-rule="evenodd" d="M7 5a3 3 0 0 1 3-3h9a3 3 0 0 1 3 3v9a3 3 0 0 1-3 3h-2v2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-9a3 3 0 0 1 3-3h2zm2 2h5a3 3 0 0 1 3 3v5h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-9a1 1 0 0 0-1 1zM5 9a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-9a1 1 0 0 0-1-1z" clip-rule="evenodd"></path></svg>Copy code</button></span></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">cd</span> portfolio-website
+            <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">cd</span> portfolio-website
 </code></div></div></pre>
         </li>
         <li>
@@ -68,8 +85,4 @@
     <p>I welcome contributions and suggestions to improve this project. Feel free to open an issue or submit a pull request. For major changes, please open an issue first to discuss what you would like to change.</p>
     <h2>License</h2>
     <p>This project is licensed under the MIT License. See the <a rel="noreferrer">LICENSE</a> file for more details.</p>
-    <hr />
-    <p>Feel free to customize this README to better fit your personal style and additional details you might want to include.</p>
-    <hr />
-    <p>If you have any specific details you'd like to add or modify, just let me know!</p>
 </div>
