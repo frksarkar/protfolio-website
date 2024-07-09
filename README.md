@@ -69,12 +69,12 @@
     <ol>
         <li>
             <strong>Clone the repository</strong>:
-            <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash">git <span class="hljs-built_in">clone</span> https://github.com/yourusername/portfolio-website.git
+            <pre><div><div><code>git <span>clone</span> https://github.com/frksarkar/protfolio-website.git
 </code></div></div></pre>
         </li>
         <li>
             <strong>Navigate to the project directory</strong>:
-            <pre><div class="dark bg-gray-950 rounded-md border-[0.5px] border-token-border-medium"><div class="overflow-y-auto p-4" dir="ltr"><code class="!whitespace-pre hljs language-bash"><span class="hljs-built_in">cd</span> portfolio-website
+            <pre><div ><div><code><span>cd</span> portfolio-website
 </code></div></div></pre>
         </li>
         <li>
