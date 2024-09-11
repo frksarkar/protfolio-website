@@ -86,4 +86,4 @@ I welcome contributions and suggestions to improve this project. Feel free to op
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License. See the **[LICENSE](LICENSE)** file for more details.
