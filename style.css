@@ -422,7 +422,7 @@ section.about .container .read-more:hover {
 
 #skills .skill .items {
 	position: relative;
-	margin-top: -19.5rem;
+	margin-top: -26.5rem;
 	z-index: -1;
 	transition: margin 2s;
 }
