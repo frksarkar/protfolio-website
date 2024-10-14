@@ -882,10 +882,11 @@ footer {
 	height: 100vh;
 
 	.main-section {
-		height: 100%;
+		flex: 1;
 	}
 
 	section {
+		height: 100%;
 		display: none;
 		flex-direction: column;
 		justify-content: center;
@@ -894,8 +895,8 @@ footer {
 		&.landing {
 			display: flex;
 		}
-		&.about {
-			height: 100%;
+		&.skills {
+			justify-content: start;
 		}
 	}
 	footer {
