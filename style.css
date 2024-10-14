@@ -227,8 +227,6 @@ section.landing {
 	display: grid;
 	place-items: center;
 	position: relative;
-	/* top: 5rem; */
-	padding: 17rem 0;
 }
 section.landing > .container {
 	display: grid;
@@ -875,4 +873,34 @@ footer {
 		display: none;
 	}
 	/* contact section end */
+}
+
+.root {
+	display: flex;
+	flex-direction: column;
+	max-width: 100vw;
+	height: 100vh;
+
+	.main-section {
+		height: 100%;
+	}
+
+	section {
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.5s ease;
+		&.landing {
+			display: flex;
+		}
+		&.about {
+			height: 100%;
+		}
+	}
+	footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
 }

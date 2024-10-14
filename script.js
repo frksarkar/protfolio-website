@@ -17,6 +17,7 @@ const menu = (() => {
 					return element.classList.remove('active-menu');
 				}
 			});
+			activeSection(this.href);
 			this.classList.add('active-menu');
 		});
 	});
@@ -93,3 +94,19 @@ window.addEventListener('scroll', () => {
 		}
 	});
 })();
+
+// active section
+const activeSection = (href) => {
+	let sectionName = href.split('#')[1];
+	if (sectionName === '') {
+		sectionName = 'hero-section';
+	}
+	const sections = document.querySelectorAll('section');
+	sections.forEach((section) => {
+		section.style.display = 'none';
+		if (section.id === sectionName) {
+			section.style.display = 'flex';
+			console.log(sectionName);
+		}
+	});
+};
