@@ -81,3 +81,15 @@ window.addEventListener('scroll', () => {
 	nav.navContainer.classList.toggle('nav-box-shadow', window.scrollY > 50);
 	console.log(window.scrollY);
 });
+
+// progress bar width setter
+(() => {
+	const progressBars = document.querySelectorAll('.progress-bar');
+	progressBars.forEach((element) => {
+		const width = element.nextElementSibling.innerText;
+		const progress = element.firstElementChild;
+		if (width && progress) {
+			progress.style.width = width;
+		}
+	});
+})();

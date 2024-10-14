@@ -480,19 +480,8 @@ section.about .container .read-more:hover {
 	background-color: var(--color-primary-light);
 }
 
-#skills .skill .item:first-child .progress {
+#skills .skill .item .progress {
 	width: 99%;
-	height: 1rem;
-	background-color: var(--color-primary);
-}
-#skills .skill .item:nth-child(2) .progress {
-	width: 80%;
-	height: 1rem;
-	background-color: var(--color-primary);
-}
-
-#skills .skill .item:last-child .progress {
-	width: 50%;
 	height: 1rem;
 	background-color: var(--color-primary);
 }
@@ -854,6 +843,11 @@ footer {
 	#skills .container {
 		width: 95%;
 	}
+
+	#skills .skill .items {
+		margin-top: -25.5rem;
+	}
+
 	/* skill section end */
 	/* service section start */
 	#services .container {
