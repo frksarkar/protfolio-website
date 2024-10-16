@@ -876,3 +876,9 @@ footer {
 	}
 	/* contact section end */
 }
+
+
+.thumbnail {
+    height: 50%;
+    overflow: hidden;
+}
